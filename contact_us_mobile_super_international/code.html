@@ -127,9 +127,8 @@
 <input class="bg-surface-container-low border border-outline-variant/50 rounded-lg px-4 py-2 text-label-md focus:outline-none focus:border-primary w-64" placeholder="Search CAS or Product..." type="text"/>
 </div>
 <a class="bg-primary text-on-primary px-stack-lg py-2 rounded-lg text-label-md font-label-md hover:opacity-90 active:scale-95 transition-all inline-flex items-center justify-center" href="../contact_us_mobile_super_international/code.html">Inquiry</a>
-</div>
-</div>
-</header>
+<button class="mobile-menu-toggle md:hidden inline-flex items-center justify-center p-3 -mr-3 text-primary" type="button" aria-label="Open navigation menu" aria-expanded="false"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button></div></div>
+<div class="mobile-menu-panel hidden md:hidden border-t border-outline-variant/20 bg-surface px-margin-mobile py-4 shadow-[0px_8px_20px_rgba(0,31,63,0.12)]"><nav class="flex flex-col gap-2"><a class="mobile-menu-link text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md py-2" href="../index.html">Home</a><a class="mobile-menu-link text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md py-2" href="../product_portfolio_mobile_super_international/code.html">Products</a><a class="mobile-menu-link text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md py-2" href="../about_us_mobile_super_international/code.html">About Us</a><a class="mobile-menu-link text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md py-2" href="../contact_us_mobile_super_international/code.html">Contact Us</a><a class="mobile-menu-link bg-primary text-on-primary px-4 py-3 rounded-lg text-label-md font-label-md text-center" href="../contact_us_mobile_super_international/code.html">Inquiry</a></nav></div></header>
 <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative h-[400px] overflow-hidden flex items-center">
@@ -339,4 +338,43 @@
             });
         });
     </script>
-</body></html>
+<script id="mobile-menu-script">
+        (() => {
+            const closeMenu = (toggle, panel) => {
+                panel.classList.add('hidden');
+                toggle.setAttribute('aria-expanded', 'false');
+                const icon = toggle.querySelector('.material-symbols-outlined');
+                if (icon) icon.textContent = 'menu';
+            };
+
+            document.querySelectorAll('header').forEach((header) => {
+                const toggle = header.querySelector('.mobile-menu-toggle');
+                const panel = header.querySelector('.mobile-menu-panel');
+                if (!toggle || !panel) return;
+
+                toggle.addEventListener('click', () => {
+                    const isOpen = !panel.classList.contains('hidden');
+                    if (isOpen) {
+                        closeMenu(toggle, panel);
+                        return;
+                    }
+                    panel.classList.remove('hidden');
+                    toggle.setAttribute('aria-expanded', 'true');
+                    const icon = toggle.querySelector('.material-symbols-outlined');
+                    if (icon) icon.textContent = 'close';
+                });
+
+                panel.querySelectorAll('a').forEach((link) => {
+                    link.addEventListener('click', () => closeMenu(toggle, panel));
+                });
+
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth >= 768) closeMenu(toggle, panel);
+                });
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') closeMenu(toggle, panel);
+                });
+            });
+        })();
+    </script></body></html>
