@@ -1,0 +1,425 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="assets/js/tailwindcss.js"></script>
+<link href="assets/css/inter.css" rel="stylesheet">
+<link href="assets/css/material-symbols.css" rel="stylesheet">
+<link href="assets/css/material-symbols.css" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .zebra-stripe:nth-child(even) {
+            background-color: rgba(0, 31, 63, 0.05);
+        }
+        .text-shadow-sm {
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#93f2f2",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-fixed-variant": "#004f4f",
+                        "surface-container": "#edeeef",
+                        "on-primary-fixed": "#001c3a",
+                        "secondary": "#50606f",
+                        "primary-container": "#001f3f",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary-fixed-variant": "#2f486a",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#43474e",
+                        "tertiary-container": "#002323",
+                        "tertiary": "#000707",
+                        "primary-fixed-dim": "#afc8f0",
+                        "on-secondary-container": "#556474",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#b8c8da",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#2e3132",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary-container": "#2c9494",
+                        "on-secondary-fixed-variant": "#394857",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary-fixed": "#0d1d2a",
+                        "on-background": "#191c1d",
+                        "primary-fixed": "#d4e3ff",
+                        "surface-variant": "#e1e3e4",
+                        "on-primary-container": "#6f88ad",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary-container": "#d1e1f4",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "surface-dim": "#d9dadb",
+                        "outline": "#74777f",
+                        "secondary-fixed": "#d4e4f6",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#76d6d5",
+                        "primary": "#000613",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#002020",
+                        "outline-variant": "#c4c6cf",
+                        "surface": "#f8f9fa",
+                        "surface-tint": "#476083",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#afc8f0",
+                        "error-container": "#ffdad6",
+                        "background": "#f8f9fa"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max-width": "1280px",
+                        "stack-md": "16px",
+                        "section-padding": "80px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "stack-sm": "8px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<div class="flex justify-between items-center h-20 px-6 md:px-16 max-w-7xl mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary tracking-tight">Super International</div>
+<nav class="hidden md:flex items-center gap-stack-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="../index.html">Home</a>
+<a class="text-primary border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="home_super_international.html#product-categories">Products</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="about_us_super_international.html">About Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="contact_us_super_international.html">Contact Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="simple_privacy_policy_super_international.html">Privacy</a>
+</nav>
+<div class="flex items-center gap-stack-md">
+
+<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md hover:opacity-90 transition-all active:scale-95 duration-150">Inquiry</button>
+<button class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+</header>
+<div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
+<aside class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-[280px] bg-surface dark:bg-inverse-surface shadow-lg -translate-x-full transition-transform duration-300 ease-in-out" id="navigation-drawer">
+<div class="p-6 border-b border-outline-variant/10 flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Industrial Solutions</h2>
+<button class="p-2 text-primary active:opacity-80" onclick="toggleDrawer()" aria-label="Close navigation">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex-1 py-4 overflow-y-auto">
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="../index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="home_super_international.html#product-categories">
+<span class="material-symbols-outlined">science</span>
+<span class="font-label-md text-label-md">Products</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="about_us_super_international.html">
+<span class="material-symbols-outlined">factory</span>
+<span class="font-label-md text-label-md">About Us</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="contact_us_super_international.html">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-md text-label-md">Contact Us</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="simple_privacy_policy_super_international.html">
+<span class="material-symbols-outlined">policy</span>
+<span class="font-label-md text-label-md">Privacy</span>
+</a>
+</nav>
+</aside>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-50" data-alt="A high-resolution industrial laboratory setting showcasing white Magnesium Oxide powder in a pristine glass container. The background features complex stainless steel chemical processing equipment in a modern factory. The lighting is bright and professional, highlighting the purity of the mineral with soft shadows and a clinical, high-trust B2B aesthetic dominated by cool navy and white tones." src="assets/images/remote-image-057.png">
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 md:px-16 w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant text-label-md rounded mb-4">Chemical Division</span>
+<h1 class="text-display-lg font-display-lg text-white mb-6">Magnesium Oxide (MgO)</h1>
+<p class="text-body-lg font-body-lg text-white/90 leading-relaxed mb-8">
+                        A critical industrial mineral serving as a high-performance vulcanizing agent, efficient acid acceptor, and superior refractory material for extreme environments. Precision-engineered for consistent purity and reactivity.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-white text-primary px-8 py-4 rounded-lg font-label-md hover:bg-surface-container transition-all" href="#technical-data">View Specifications</a>
+<button onclick="window.location.href='magnesium_oxide_with_description_super_international.html'" class="border border-white text-white px-8 py-4 rounded-lg font-label-md hover:bg-white/10 transition-all">Download SDS</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Performance Features -->
+<section class="bg-surface py-20 px-6 md:px-16">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-headline-md font-headline-md text-primary mb-10">Global Standard in High-Purity MgO</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                    Our Magnesium Oxide (MgO) is processed to the highest industry standards, ensuring exceptional purity and performance consistency. As a critical mineral in the chemical and industrial sectors, it serves as a high-efficiency acid acceptor and vulcanizing agent. We provide a diverse range of grades, from light-burned to fused MgO, tailored for specific reactivity requirements in neoprene rubber, adhesives, and refractories.
+                </p>
+</div>
+<div>
+<ul class="space-y-4">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-body-md text-on-surface">99%+ Purity Levels for critical applications</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-body-md text-on-surface">Optimized Surface Area for precise reactivity</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-body-md text-on-surface">Consistent Particle Size Distribution</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-body-md text-on-surface">Global Compliance with industrial safety standards</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section class="py-section-padding px-6 md:px-16 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-4">Key Performance Features</h2>
+<div class="h-1 w-20 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-8 bg-surface-container-lowest border border-outline-variant/20 rounded-xl shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">thermostat</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-4">High Thermal Stability</h3>
+<p class="text-on-surface-variant">Maintains structural integrity and chemical properties at temperatures exceeding 2800°C. Ideal for refractory linings and high-heat polymer compounds.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest border border-outline-variant/20 rounded-xl shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-4">Superior Scorch Protection</h3>
+<p class="text-on-surface-variant">Extends processing safety margins in halogenated rubber vulcanization. Ensures uniform cross-linking and prevents premature curing in high-stress manufacturing.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest border border-outline-variant/20 rounded-xl shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">science</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-4">Acid Neutralization</h3>
+<p class="text-on-surface-variant">Highly effective HCl scavenger for halogen-containing polymers. Protects metal equipment from corrosion and enhances product longevity.</p>
+</div>
+</div>
+</section>
+<!-- Product Catalog / Grades Table -->
+<section class="bg-surface-container-low py-section-padding" id="technical-data">
+<div class="px-6 md:px-16 max-w-7xl mx-auto">
+<div class="mb-12">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-2">Technical Grade Specifications</h2>
+<p class="text-on-surface-variant">Comprehensive catalog of Magnesium Oxide variants tailored for specific industrial requirements.</p>
+</div>
+<div class="overflow-x-auto bg-surface-container-lowest rounded-xl border border-outline-variant/20 shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead class="bg-primary text-on-primary">
+<tr>
+<th class="p-6 font-label-md border-b border-outline/20">Grade Name</th>
+<th class="p-6 font-label-md border-b border-outline/20">MgO Content (%)</th>
+<th class="p-6 font-label-md border-b border-outline/20">Surface Area (m²/g)</th>
+<th class="p-6 font-label-md border-b border-outline/20">Application Intent</th>
+<th class="p-6 font-label-md border-b border-outline/20">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="zebra-stripe border-b border-outline-variant/10">
+<td class="p-6 font-bold text-primary">MAG-95 (Light Burned)</td>
+<td class="p-6">≥ 95.0%</td>
+<td class="p-6">35 - 50</td>
+<td class="p-6">Neoprene Rubber, Adhesives</td>
+<td class="p-6"><button onclick="window.location.href='magnesium_oxide_with_description_super_international.html'" class="text-primary font-bold hover:underline">Details</button></td>
+</tr>
+<tr class="zebra-stripe border-b border-outline-variant/10">
+<td class="p-6 font-bold text-primary">MAG-HR (High Reactivity)</td>
+<td class="p-6">≥ 98.2%</td>
+<td class="p-6">140 - 170</td>
+<td class="p-6">Halogenated Polymers, CSM</td>
+<td class="p-6"><button onclick="window.location.href='magnesium_oxide_with_description_super_international.html'" class="text-primary font-bold hover:underline">Details</button></td>
+</tr>
+<tr class="zebra-stripe border-b border-outline-variant/10">
+<td class="p-6 font-bold text-primary">MAG-DB (Dead Burned)</td>
+<td class="p-6">≥ 92.0%</td>
+<td class="p-6">&lt; 1</td>
+<td class="p-6">Refractories, Brick Lining</td>
+<td class="p-6"><button onclick="window.location.href='magnesium_oxide_with_description_super_international.html'" class="text-primary font-bold hover:underline">Details</button></td>
+</tr>
+<tr class="zebra-stripe border-b border-outline-variant/10">
+<td class="p-6 font-bold text-primary">MAG-F (Fused)</td>
+<td class="p-6">≥ 99.5%</td>
+<td class="p-6">&lt; 0.5</td>
+<td class="p-6">Electrical Heating Elements</td>
+<td class="p-6"><button onclick="window.location.href='magnesium_oxide_with_description_super_international.html'" class="text-primary font-bold hover:underline">Details</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Industrial Applications -->
+<section class="py-section-padding px-6 md:px-16 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-6">Industrial Applications</h2>
+<p class="text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        Our Magnesium Oxide is meticulously refined to meet the rigorous demands of global manufacturing. From critical safety components in the automotive sector to high-voltage insulation in infrastructure, MgO provides the chemical stability necessary for long-term performance.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-bold text-primary">Automotive Seals:</span>
+<p class="text-on-surface-variant text-sm">Ensures heat resistance and durability in engine gaskets and weather stripping.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-bold text-primary">Industrial Hoses:</span>
+<p class="text-on-surface-variant text-sm">Provides critical acid absorption in fuel lines and hydraulic systems.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-bold text-primary">Cable Jacketing:</span>
+<p class="text-on-surface-variant text-sm">Enhances flame retardancy and electrical insulation for high-tension cables.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<img class="w-full h-64 object-cover rounded-lg shadow-md" data-alt="A detailed close-up of heavy-duty industrial rubber seals and hoses used in automotive manufacturing. The image shows the matte black texture of high-quality vulcanized rubber, with metallic automotive parts in the blurred background. The style is industrial and precise, emphasizing the durability and reliability of the chemical agents used in their production." src="assets/images/remote-image-024.png">
+<img class="w-full h-64 object-cover rounded-lg shadow-md mt-8" data-alt="A sprawling network of high-voltage electrical cables and industrial infrastructure. The image captures the scale of energy distribution with focus on the specialized cable jacketing. Cool afternoon light highlights the textures of the insulation materials, reinforcing a sense of technological advancement and global B2B trade expertise." src="assets/images/remote-image-026.png">
+</div>
+</div>
+</section>
+<!-- Technical Inquiry CTA -->
+<section class="bg-primary text-on-primary py-24 px-6 md:px-16 overflow-hidden relative">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full fill-current" viewBox="0 0 100 100">
+<path d="M0,0 L100,0 L100,100 Z"></path>
+</svg>
+</div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="text-headline-lg font-headline-lg mb-6">Partner for Technical Excellence</h2>
+<p class="text-body-lg mb-10 opacity-90">Need specific chemical analysis or a custom MgO grade for your manufacturing process? Our technical team provides expert consultation and full documentation including SDS and Certificates of Analysis (COA).</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+
+<button onclick="window.location.href='magnesium_oxide_with_description_super_international.html'" class="border border-outline-variant/30 text-white px-10 py-4 rounded font-bold hover:bg-white/5 transition-colors">Download MSDS Library</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest py-20 w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-6 md:px-16 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-headline-md font-headline-md font-bold text-on-primary dark:text-primary mb-6">Super International</div>
+<p class="text-on-primary/70 dark:text-on-surface-variant/70 text-label-sm leading-relaxed">Global supply chain specialists for high-purity chemical compounds and industrial raw materials.</p>
+</div>
+<div>
+<h4 class="text-on-primary font-bold mb-6">Resources</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-primary/70 dark:text-on-surface-variant/70 hover:text-on-primary transition-all text-label-sm" href="tpu_category_overview_with_whatsapp_super_international.html">Product Categories</a></li>
+<li class=""><a class="text-on-primary/70 dark:text-on-surface-variant/70 hover:text-on-primary transition-all text-label-sm" href="tpu_category_overview_with_whatsapp_super_international.html">Technical Specifications</a></li>
+<li class=""><a class="text-on-primary/70 dark:text-on-surface-variant/70 hover:text-on-primary transition-all text-label-sm" href="tpu_category_overview_with_whatsapp_super_international.html">Safety Data Sheets</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-primary font-bold mb-6">Legal</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-primary/70 dark:text-on-surface-variant/70 hover:text-on-primary transition-all text-label-sm" href="simple_privacy_policy_super_international.html">Terms of Service</a></li>
+<li class=""><a class="text-on-primary/70 dark:text-on-surface-variant/70 hover:text-on-primary transition-all text-label-sm" href="simple_privacy_policy_super_international.html">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-primary font-bold mb-6">Contact</h4>
+<p class="text-on-primary/70 dark:text-on-surface-variant/70 text-label-sm mb-4">
+                    International HQ: Tower 5, Harbour Front<br>
+                    Chemical Trading Hub, SG
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-primary/70 cursor-pointer">language</span>
+<span class="material-symbols-outlined text-on-primary/70 cursor-pointer">mail</span>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/10 px-6 md:px-16 max-w-7xl mx-auto text-center">
+<p class="text-on-primary/50 dark:text-on-surface-variant/50 text-label-sm">© 2024 Super International. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+        // Simple scroll interaction for header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('py-2');
+            }
+        });
+
+        // Tab selection logic simulation
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                document.querySelectorAll('nav a').forEach(l => {
+                    l.classList.remove('text-primary', 'border-b-2', 'border-primary', 'font-bold');
+                    l.classList.add('text-on-surface-variant');
+                });
+                e.target.classList.add('text-primary', 'border-b-2', 'border-primary', 'font-bold');
+                e.target.classList.remove('text-on-surface-variant');
+            });
+        });
+    </script>
+<a href="https://wa.me/919971032297" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-8 right-8 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95">
+<svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+</svg>
+</a>
+<script>
+function toggleDrawer() {
+    const drawer = document.getElementById('navigation-drawer') || document.getElementById('nav-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+    if (!drawer || !overlay) return;
+    const isClosed = drawer.classList.contains('-translate-x-full');
+    if (isClosed) {
+        drawer.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+        requestAnimationFrame(() => overlay.classList.remove('opacity-0'));
+    } else {
+        drawer.classList.add('-translate-x-full');
+        overlay.classList.add('opacity-0');
+        setTimeout(() => overlay.classList.add('hidden'), 300);
+    }
+}
+</script>
+</body></html>

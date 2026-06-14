@@ -1,0 +1,332 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contact Us | Super International</title>
+<script src="assets/js/tailwindcss.js"></script>
+<link href="assets/css/inter.css" rel="stylesheet">
+<link href="assets/css/material-symbols.css" rel="stylesheet">
+<link href="assets/css/material-symbols.css" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Custom scrollbar for technical aesthetic */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8f9fa;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #001f3f;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#d1e1f4",
+                        "on-primary-container": "#6f88ad",
+                        "on-error": "#ffffff",
+                        "primary-container": "#001f3f",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d4e3ff",
+                        "on-surface-variant": "#43474e",
+                        "on-secondary-fixed": "#0d1d2a",
+                        "surface-dim": "#d9dadb",
+                        "primary": "#000613",
+                        "secondary-fixed-dim": "#b8c8da",
+                        "secondary": "#50606f",
+                        "on-tertiary-fixed-variant": "#004f4f",
+                        "tertiary-container": "#002323",
+                        "surface-bright": "#f8f9fa",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#afc8f0",
+                        "surface-tint": "#476083",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary-fixed-variant": "#2f486a",
+                        "surface": "#f8f9fa",
+                        "on-tertiary-fixed": "#002020",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#76d6d5",
+                        "background": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "on-primary-fixed": "#001c3a",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#d4e4f6",
+                        "tertiary": "#000707",
+                        "surface-container-high": "#e7e8e9",
+                        "outline": "#74777f",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container": "#edeeef",
+                        "outline-variant": "#c4c6cf",
+                        "inverse-primary": "#afc8f0",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary-fixed": "#93f2f2",
+                        "on-tertiary-container": "#2c9494",
+                        "on-secondary-fixed-variant": "#394857",
+                        "on-secondary-container": "#556474",
+                        "inverse-surface": "#2e3132"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "section-padding": "80px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max-width": "1280px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-surface fixed top-0 w-full z-50 border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)] flex justify-between items-center px-margin-mobile h-16">
+<div class="flex items-center gap-4">
+<button class="p-2 active:opacity-80 transition-opacity" onclick="toggleDrawer()">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Super International</h1>
+</div>
+<div class="w-10" aria-hidden="true"></div>
+</header>
+<!-- Navigation Drawer Overlay -->
+<div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
+<!-- NavigationDrawer -->
+<aside class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-[280px] bg-surface dark:bg-inverse-surface shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out" id="nav-drawer">
+<div class="p-6 border-b border-outline-variant/10 flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Super International</h2>
+
+</div>
+<nav class="flex-1 py-4 overflow-y-auto">
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="../index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="home_super_international.html#product-categories">
+<span class="material-symbols-outlined">science</span>
+<span class="font-label-md text-label-md">Products</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="about_us_super_international.html">
+<span class="material-symbols-outlined">factory</span>
+<span class="font-label-md text-label-md">About Us</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="contact_us_super_international.html">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-md text-label-md">Contact Us</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="simple_privacy_policy_super_international.html">
+<span class="material-symbols-outlined">policy</span>
+<span class="font-label-md text-label-md">Privacy</span>
+</a></div>
+</nav>
+</aside>
+<main class="mt-16 flex-grow">
+<!-- Hero Section -->
+<section class="relative h-48 bg-primary-container flex items-center px-margin-mobile overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<div class="w-full h-full bg-[radial-gradient(#6f88ad_1px,transparent_1px)] [background-size:20px_20px]"></div>
+</div>
+<div class="relative z-10">
+<h2 class="font-display-lg-mobile text-display-lg-mobile text-white mb-2">Global Inquiry Support</h2>
+<p class="font-body-md text-body-md text-on-primary-container max-w-xs">Technical expertise and logistics solutions across six continents.</p>
+</div>
+</section>
+<!-- Technical Inquiry Form -->
+<section class="px-margin-mobile py-stack-lg bg-surface">
+<div class="flex items-center gap-2 mb-stack-md">
+<span class="w-1 h-6 bg-primary"></span>
+<h3 class="font-headline-md text-headline-md uppercase tracking-tight">Technical Inquiry</h3>
+</div>
+<form class="space-y-stack-md">
+<div class="grid grid-cols-1 gap-stack-md">
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm text-primary uppercase">Full Name</label>
+<input class="w-full border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="Enter name" type="text">
+</div>
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm text-primary uppercase">Corporate Email</label>
+<input class="w-full border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="name@company.com" type="email">
+</div>
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm text-primary uppercase">Industry Segment</label>
+<select class="w-full border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md">
+<option>Specialty Chemicals</option>
+<option>Pharmaceuticals</option>
+<option>Agrochemicals</option>
+<option>Polymers &amp; Plastics</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm text-primary uppercase">Inquiry Details</label>
+<textarea class="w-full border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="Describe your technical requirements or product specs..." rows="4"></textarea>
+</div>
+</div>
+<button class="w-full bg-primary text-white font-label-md text-label-md py-4 uppercase tracking-widest active:bg-secondary transition-colors" type="submit">
+                    Submit Inquiry
+                </button>
+</form>
+</section>
+<!-- Headquarters Info -->
+<section class="px-margin-mobile py-stack-lg bg-surface-container">
+<div class="bg-white border border-outline-variant/30 p-6 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<h3 class="font-headline-md text-headline-md mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">corporate_fare</span>
+                    Global HQ
+                </h3>
+<div class="space-y-stack-sm font-body-md text-body-md text-on-surface-variant">
+<p class="font-bold text-primary">Super International Industrial Center</p>
+<p class="">88 Industrial Way, Suite 400</p>
+<p class="">Houston, TX 77002, USA</p>
+<div class="pt-4 space-y-2">
+<a class="flex items-center gap-3 text-primary hover:underline" href="tel:+18005550199">
+<span class="material-symbols-outlined text-sm">call</span>
+                            +1 (800) 555-0199
+                        </a>
+<a class="flex items-center gap-3 text-primary hover:underline" href="mailto:hq@chemcorpglobal.com">
+<span class="material-symbols-outlined text-sm">mail</span>
+                            hq@chemcorpglobal.com
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Logistics Hubs -->
+<section class="px-margin-mobile py-stack-lg">
+<h3 class="font-label-md text-label-md uppercase text-secondary mb-stack-md border-b border-outline-variant/20 pb-2">Regional Logistics Hubs</h3>
+<div class="space-y-stack-md">
+<!-- Hub 1 -->
+<div class="flex items-start gap-4 p-4 border-l-2 border-primary bg-surface-container-low">
+<div class="flex-grow">
+<p class="font-label-md text-label-md text-primary">Rotterdam Terminal (EU)</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Hazardous Cargo Processing &amp; Storage</p>
+<span class="inline-block mt-2 font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5">ISO 14001</span>
+</div>
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<!-- Hub 2 -->
+<div class="flex items-start gap-4 p-4 border-l-2 border-primary bg-surface-container-low">
+<div class="flex-grow">
+<p class="font-label-md text-label-md text-primary">Singapore Port (APAC)</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Regional Distribution &amp; Repackaging</p>
+<span class="inline-block mt-2 font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5">Customs Verified</span>
+</div>
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<!-- Hub 3 -->
+<div class="flex items-start gap-4 p-4 border-l-2 border-primary bg-surface-container-low">
+<div class="flex-grow">
+<p class="font-label-md text-label-md text-primary">Dubai Logistics City (MENA)</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Middle East Supply Chain Coordination</p>
+<span class="inline-block mt-2 font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5">Duty Free Zone</span>
+</div>
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+</div>
+</section>
+<!-- Office Map Representation -->
+<section class="h-64 bg-surface-container-highest relative overflow-hidden">
+<div class="absolute inset-0 grayscale opacity-50 bg-cover bg-center" data-alt="A detailed map with precise minimalist cartography showing global shipping routes and industrial locations across the continents. The map uses a monochrome palette of deep navy and slate grey with subtle teal points indicating logistics hubs. The lighting is digital and clean, emphasizing technical accuracy and global reach for an international chemical supplier." style="background-image: url('assets/images/remote-image-031.png')"></div>
+<div class="absolute inset-0 bg-primary/10"></div>
+<div class="absolute bottom-4 left-4 bg-white px-3 py-1 font-label-sm text-label-sm shadow-sm border border-outline-variant/30 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+                Operational: Global Network
+            </div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container text-on-primary-container font-body-md text-body-md grid grid-cols-1 gap-stack-lg px-margin-mobile py-section-padding border-t border-outline/10">
+<div class="space-y-4">
+<div class="font-label-md text-label-md uppercase tracking-widest text-on-primary-container">Super International</div>
+<p class="opacity-80">Supplying the foundations of modern industry through rigorous chemical engineering and logistics.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<a class="text-on-primary-container/80 hover:text-on-primary transition-all underline decoration-1 underline-offset-4" href="about_us_mobile_super_international.html">Compliance</a>
+<a class="text-on-primary-container/80 hover:text-on-primary transition-all underline decoration-1 underline-offset-4" href="contact_us_mobile_super_international.html">Global Logistics</a>
+<a class="text-on-primary-container/80 hover:text-on-primary transition-all underline decoration-1 underline-offset-4" href="simple_privacy_policy_mobile_super_international.html">Terms of Sale</a>
+<a class="text-on-primary-container/80 hover:text-on-primary transition-all underline decoration-1 underline-offset-4" href="simple_privacy_policy_mobile_super_international.html">Privacy Policy</a>
+</div>
+<div class="pt-8 border-t border-outline/10 col-span-full">
+<p class="text-label-sm font-label-sm opacity-60">© 2024 Super International Industrial. All rights reserved. ISO 9001 Certified.</p>
+</div>
+</footer>
+<!-- BottomNavBar / FAB Cluster -->
+
+<script>
+        function toggleDrawer() {
+            const drawer = document.getElementById('nav-drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            const isHidden = drawer.classList.contains('-translate-x-full');
+            
+            if (isHidden) {
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                setTimeout(() => overlay.classList.add('opacity-100'), 10);
+            } else {
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.remove('opacity-100');
+                setTimeout(() => overlay.classList.add('hidden'), 300);
+            }
+        }
+    </script>
+
+
+<script>
+        function toggleDrawer() {
+            const drawer = document.getElementById('nav-drawer') || document.getElementById('navigation-drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            if (!drawer || !overlay) return;
+
+            const isClosed = drawer.classList.contains('-translate-x-full');
+            if (isClosed) {
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                setTimeout(() => overlay.classList.add('opacity-100'), 10);
+            } else {
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.remove('opacity-100');
+                setTimeout(() => overlay.classList.add('hidden'), 300);
+            }
+        }
+    </script>
+<a href="https://wa.me/919971032297" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-8 right-8 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95">
+<svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+</svg>
+</a>
+</body></html>

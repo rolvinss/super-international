@@ -1,0 +1,476 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>TPU: Industrial Polymers | Super International</title>
+<script src="assets/js/tailwindcss.js"></script>
+<link href="assets/css/inter.css" rel="stylesheet">
+<link href="assets/css/material-symbols.css" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#002020",
+                    "primary-fixed-dim": "#afc8f0",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#afc8f0",
+                    "on-primary-fixed": "#001c3a",
+                    "background": "#f8f9fa",
+                    "on-background": "#191c1d",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-container": "#2c9494",
+                    "surface": "#f8f9fa",
+                    "secondary-fixed-dim": "#b8c8da",
+                    "on-secondary-fixed": "#0d1d2a",
+                    "on-tertiary-fixed-variant": "#004f4f",
+                    "inverse-surface": "#2e3132",
+                    "secondary": "#50606f",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-container": "#edeeef",
+                    "surface-bright": "#f8f9fa",
+                    "primary-fixed": "#d4e3ff",
+                    "primary": "#000613",
+                    "tertiary": "#000707",
+                    "on-surface-variant": "#43474e",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#76d6d5",
+                    "surface-tint": "#476083",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary-container": "#d1e1f4",
+                    "surface-variant": "#e1e3e4",
+                    "on-surface": "#191c1d",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#6f88ad",
+                    "primary-container": "#001f3f",
+                    "on-secondary-container": "#556474",
+                    "on-secondary-fixed-variant": "#394857",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d4e4f6",
+                    "outline-variant": "#c4c6cf",
+                    "outline": "#74777f",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#e7e8e9",
+                    "tertiary-fixed": "#93f2f2",
+                    "on-primary-fixed-variant": "#2f486a",
+                    "tertiary-container": "#002323"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "stack-md": "16px",
+                    "stack-lg": "32px",
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "section-padding": "80px",
+                    "margin-desktop": "64px",
+                    "container-max-width": "1280px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .zebra-table tr:nth-child(even) { background-color: rgba(0, 31, 63, 0.05); }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary tracking-tight">Super International</div>
+<nav class="hidden md:flex items-center gap-stack-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="../index.html">Home</a>
+<a class="text-primary border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="home_super_international.html#product-categories">Products</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="about_us_super_international.html">About Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="contact_us_super_international.html">Contact Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="simple_privacy_policy_super_international.html">Privacy</a>
+</nav>
+<div class="flex items-center gap-gutter">
+
+<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-opacity-90 transition-all active:scale-95">Inquiry</button>
+<button class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+</header>
+<div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
+<aside class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-[280px] bg-surface dark:bg-inverse-surface shadow-lg -translate-x-full transition-transform duration-300 ease-in-out" id="navigation-drawer">
+<div class="p-6 border-b border-outline-variant/10 flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Industrial Solutions</h2>
+<button class="p-2 text-primary active:opacity-80" onclick="toggleDrawer()" aria-label="Close navigation">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex-1 py-4 overflow-y-auto">
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="../index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="home_super_international.html#product-categories">
+<span class="material-symbols-outlined">science</span>
+<span class="font-label-md text-label-md">Products</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="about_us_super_international.html">
+<span class="material-symbols-outlined">factory</span>
+<span class="font-label-md text-label-md">About Us</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="contact_us_super_international.html">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-md text-label-md">Contact Us</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-all" href="simple_privacy_policy_super_international.html">
+<span class="material-symbols-outlined">policy</span>
+<span class="font-label-md text-label-md">Privacy</span>
+</a>
+</nav>
+</aside>
+<main class="pt-20">
+<!-- 1. Hero Section -->
+<section class="relative flex items-center overflow-hidden h-[50vh]">
+<div class="absolute inset-0 z-0">
+<img alt="Industrial TPU Pellets" class="w-full h-full object-cover grayscale-[0.2] brightness-[0.4]" data-alt="A macro photograph of high-quality translucent TPU plastic pellets piled in an industrial storage container. The lighting is cold and professional, highlighting the clear and uniform texture of the polymer. The overall atmosphere is scientific and high-tech, with subtle hints of laboratory equipment in the blurred background. The color palette is dominated by deep navy blues and sharp whites, reflecting a corporate modern aesthetic." src="assets/images/remote-image-020.png">
+</div>
+<div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop w-full text-white">
+<div class="max-w-3xl">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg leading-tight mb-stack-md">TPU: The Flagship of Industrial Polymers</h1>
+<p class="text-body-lg mb-stack-lg text-surface-variant">Versatile elastomers offering high flexibility, transparency, and resistance to oil, grease, and abrasion.</p>
+<div class="flex flex-wrap gap-stack-md">
+<button onclick="window.location.href='tpu_category_overview_with_whatsapp_super_international.html'" class="bg-primary-container text-on-primary px-8 py-4 rounded font-bold hover:bg-opacity-90 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">download</span> Download Technical Catalog
+                        </button>
+<button onclick="window.location.href='contact_us_super_international.html'" class="border border-white/40 hover:border-white text-white px-8 py-4 rounded font-bold backdrop-blur-sm transition-all">
+                            Request Samples
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Technical Overview -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid md:grid-cols-2 gap-gutter items-center">
+<div>
+<span class="text-label-md font-label-md text-primary tracking-widest uppercase mb-stack-sm block">Material Excellence</span>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-stack-lg">Bridging the Gap: Plastic vs Rubber</h2>
+<p class="text-body-md text-on-surface-variant mb-stack-md">Thermoplastic Polyurethane (TPU) stands as the definitive bridge between high-performance plastics and resilient rubbers. Its unique block copolymer structure allows it to provide the durability of a thermoplastic alongside the high elasticity and flexibility typical of elastomers.</p>
+<p class="text-body-md text-on-surface-variant">At Super International, our TPU grades are engineered for extreme environments. Whether it's the intense pressure of automotive components or the subtle flexibility required in high-end footwear, our polymers provide the structural integrity and chemical stability required by global industrial standards.</p>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-lg border border-outline-variant/20">
+<img alt="TPU Lab Testing" class="w-full h-[400px] object-cover" data-alt="A clean, minimalist laboratory setting showing a precision industrial machine testing the tensile strength of a transparent TPU strip. The environment is sterile with bright white surfaces and stainless steel tools. The lighting is sharp and clinical, emphasizing the precision of polymer engineering. The color scheme is professional with cool blue accents, consistent with a high-trust chemical supplier branding." src="assets/images/remote-image-006.png">
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Performance Features -->
+<section class="py-section-padding bg-surface-container-low">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="text-headline-lg font-headline-lg text-primary">Unrivaled Performance</h2>
+<div class="w-20 h-1 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Feature 1 -->
+<div class="bg-surface border border-outline-variant/20 p-8 rounded shadow-[0px_4px_12px_rgba(0,31,63,0.08)] hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded mb-6">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">High Abrasion Resistance</h3>
+<p class="text-body-md text-on-surface-variant">Exceptional durability against surface wear and tear in high-friction environments.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface border border-outline-variant/20 p-8 rounded shadow-[0px_4px_12px_rgba(0,31,63,0.08)] hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded mb-6">
+<span class="material-symbols-outlined">science</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Chemical Stability</h3>
+<p class="text-body-md text-on-surface-variant">Maintains integrity when exposed to oils, greases, and a wide variety of solvents.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface border border-outline-variant/20 p-8 rounded shadow-[0px_4px_12px_rgba(0,31,63,0.08)] hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded mb-6">
+<span class="material-symbols-outlined">ac_unit</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Low-Temperature Flexibility</h3>
+<p class="text-body-md text-on-surface-variant">Retains elastic properties even in sub-zero industrial conditions.</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface border border-outline-variant/20 p-8 rounded shadow-[0px_4px_12px_rgba(0,31,63,0.08)] hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded mb-6">
+<span class="material-symbols-outlined">dynamic_form</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">High Elasticity</h3>
+<p class="text-body-md text-on-surface-variant">Impressive elongation at break and rapid recovery after mechanical stress.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Specialized Sub-Categories -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-stack-lg">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-primary">Specialized TPU Categories</h2>
+<p class="text-body-md text-on-surface-variant mt-2">Engineered solutions for diverse processing methods.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Category 1 -->
+<div class="group border border-outline-variant/20 rounded overflow-hidden hover:border-primary/50 transition-all">
+<div class="h-48 overflow-hidden">
+<img alt="Solvent-Based TPU" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional close-up of a clear adhesive liquid being poured into a high-tech mixing vessel. The scene is illuminated with soft, cool white lights, creating a modern industrial feel. The liquid is crystalline and reflects the surrounding clean-room environment. The focus is sharp on the viscosity of the fluid, representing high-grade solvent-based TPU adhesive production." src="assets/images/remote-image-052.png">
+</div>
+<div class="p-6">
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Solvent-Based TPU</h3>
+<p class="text-body-md text-on-surface-variant mb-6">Optimized for high-performance adhesives and textile coatings requiring rapid bonding.</p>
+<button onclick="window.location.href='tpu_category_overview_with_whatsapp_super_international.html'" class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
+                                View Grades <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="group border border-outline-variant/20 rounded overflow-hidden hover:border-primary/50 transition-all">
+<div class="h-48 overflow-hidden">
+<img alt="Extrusion TPU" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A detailed view of an industrial extrusion line producing high-quality flexible tubing from clear TPU. The machinery is polished stainless steel, and the lighting is a mix of natural and studio light, creating deep shadows and bright highlights. The scene is tidy and technologically advanced, conveying reliability and high-volume manufacturing capability." src="assets/images/remote-image-042.png">
+</div>
+<div class="p-6">
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Extrusion TPU</h3>
+<p class="text-body-md text-on-surface-variant mb-6">Designed for hoses, tubing, and wire/cable jacketing with excellent melt stability.</p>
+<button onclick="window.location.href='tpu_category_overview_with_whatsapp_super_international.html'" class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
+                                View Grades <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="group border border-outline-variant/20 rounded overflow-hidden hover:border-primary/50 transition-all">
+<div class="h-48 overflow-hidden">
+<img alt="Injection Moulding TPU" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A precision-engineered injection molded component made from dark blue TPU, resting on a brushed metal surface. The background shows a modern manufacturing plant with organized rows of machinery. The focus is on the intricate detail and smooth finish of the molded part. The atmosphere is quiet, professional, and sophisticated, dominated by a corporate navy blue and gray palette." src="assets/images/remote-image-025.png">
+</div>
+<div class="p-6">
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Injection Moulding</h3>
+<p class="text-body-md text-on-surface-variant mb-6">Rapid cycle times for automotive parts, protective cases, and mechanical seals.</p>
+<button onclick="window.location.href='tpu_category_overview_with_whatsapp_super_international.html'" class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
+                                View Grades <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Category 4 -->
+<div class="group border border-outline-variant/20 rounded overflow-hidden hover:border-primary/50 transition-all">
+<div class="p-6">
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Hot Melt TPU</h3>
+<p class="text-body-md text-on-surface-variant mb-6">Eco-friendly bonding solution for footwear and luggage manufacturing.</p>
+<button onclick="window.location.href='tpu_category_overview_with_whatsapp_super_international.html'" class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
+                                View Grades <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Category 5 -->
+<div class="group border border-outline-variant/20 rounded overflow-hidden hover:border-primary/50 transition-all">
+<div class="p-6">
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Ink TPU</h3>
+<p class="text-body-md text-on-surface-variant mb-6">Specialized resins for screen printing and digital inks on flexible substrates.</p>
+<button onclick="window.location.href='tpu_category_overview_with_whatsapp_super_international.html'" class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
+                                View Grades <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Standard Properties Table -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="text-headline-lg font-headline-lg text-primary">Technical Specifications</h2>
+<p class="text-body-md text-on-surface-variant">Comparative analysis of typical TPU grade performance ranges.</p>
+</div>
+<div class="overflow-x-auto rounded-lg border border-outline-variant/20 shadow-sm">
+<table class="w-full text-left border-collapse zebra-table">
+<thead class="bg-primary text-on-primary">
+<tr>
+<th class="p-4 font-label-md text-label-md">TPU Type</th>
+<th class="p-4 font-label-md text-label-md">Hardness (Shore A/D)</th>
+<th class="p-4 font-label-md text-label-md">Tensile Strength (MPa)</th>
+<th class="p-4 font-label-md text-label-md">Elongation at Break (%)</th>
+<th class="p-4 font-label-md text-label-md">Melt Temperature (°C)</th>
+</tr>
+</thead>
+<tbody class="text-body-md text-on-surface">
+<tr>
+<td class="p-4 font-bold border-b border-outline-variant/10">Solvent-Based</td>
+<td class="p-4 border-b border-outline-variant/10">75A - 95A</td>
+<td class="p-4 border-b border-outline-variant/10">35 - 45</td>
+<td class="p-4 border-b border-outline-variant/10">500 - 800</td>
+<td class="p-4 border-b border-outline-variant/10">N/A (Liquid)</td>
+</tr>
+<tr>
+<td class="p-4 font-bold border-b border-outline-variant/10">Extrusion Grade</td>
+<td class="p-4 border-b border-outline-variant/10">80A - 65D</td>
+<td class="p-4 border-b border-outline-variant/10">40 - 55</td>
+<td class="p-4 border-b border-outline-variant/10">400 - 650</td>
+<td class="p-4 border-b border-outline-variant/10">180 - 210</td>
+</tr>
+<tr>
+<td class="p-4 font-bold border-b border-outline-variant/10">Injection Grade</td>
+<td class="p-4 border-b border-outline-variant/10">60A - 75D</td>
+<td class="p-4 border-b border-outline-variant/10">30 - 60</td>
+<td class="p-4 border-b border-outline-variant/10">300 - 700</td>
+<td class="p-4 border-b border-outline-variant/10">190 - 220</td>
+</tr>
+<tr>
+<td class="p-4 font-bold border-b border-outline-variant/10">Hot Melt</td>
+<td class="p-4 border-b border-outline-variant/10">60A - 85A</td>
+<td class="p-4 border-b border-outline-variant/10">25 - 35</td>
+<td class="p-4 border-b border-outline-variant/10">600 - 900</td>
+<td class="p-4 border-b border-outline-variant/10">140 - 160</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- 6. Industrial Applications (Bento Grid Style) -->
+<section class="py-section-padding bg-surface-container-low">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-stack-lg">Industrial Applications</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+<div class="md:col-span-2 md:row-span-2 relative rounded-xl overflow-hidden group">
+<img alt="Footwear Application" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A clean product shot of a high-performance athletic shoe with visible TPU sole components and structural overlays. The lighting is bright and modern, showcasing the material's transparency and flexibility. The scene is minimalist with a light gray background, highlighting the industrial design of the footwear. The overall mood is active yet professional." src="assets/images/remote-image-014.png">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white text-headline-md font-headline-md">Footwear Engineering</h3>
+<p class="text-white/80 text-body-md">Soles, heels, and structural elements for global brands.</p>
+</div>
+</div>
+<div class="md:col-span-2 relative rounded-xl overflow-hidden group">
+<img alt="Automotive Application" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A sleek automotive interior showing high-end dashboard trim and gear shifter components made from soft-touch TPU. The lighting is dramatic and luxurious, emphasizing the premium finish and durability of the material. The color palette is dark and sophisticated, with navy and charcoal tones. The image conveys authority and high-performance engineering." src="assets/images/remote-image-055.png">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white text-headline-md font-headline-md">Automotive Components</h3>
+<p class="text-white/80 text-body-md">Interior trims, gaskets, and exterior protective parts.</p>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden group">
+<img alt="Industrial Application" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Industrial robotic arms working in a modern, clean factory environment. TPU hoses and cable protectors are visible, providing flexible protection for electrical systems. The scene is high-key and technical, with a focus on automation and industrial efficiency. The palette is dominated by cool grays and steel blues." src="assets/images/remote-image-005.png">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-headline-md font-headline-md">Manufacturing</h3>
+<p class="text-white/80 text-body-md">Belts and seals.</p>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden group">
+<img alt="Adhesives Application" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up of a textile lamination process using TPU hot melt adhesive. The fabric is being bonded with high precision, showing the clean and efficient application of the polymer. The lighting is soft and diffused, emphasizing the high-tech nature of textile bonding. The mood is professional and focused on material innovation." src="assets/images/remote-image-008.png">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-headline-md font-headline-md">Adhesives</h3>
+<p class="text-white/80 text-body-md">Textile bonding.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Bottom CTA -->
+<section class="py-section-padding bg-primary text-on-primary">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="text-display-lg-mobile md:text-headline-lg font-headline-lg mb-stack-md">Ready to Optimize Your Material Strategy?</h2>
+<p class="text-body-lg text-on-primary/80 mb-stack-lg max-w-2xl mx-auto">Our chemical engineers are available to help you select or customize a TPU grade that perfectly matches your technical requirements.</p>
+<div class="flex flex-wrap justify-center gap-stack-md">
+<a class="bg-white text-primary px-10 py-4 rounded font-bold hover:bg-surface-variant transition-all" href="contact_us_super_international.html">Request a Custom TPU Grade</a>
+<a class="border border-white/30 text-white px-10 py-4 rounded font-bold hover:bg-white/10 transition-all" href="contact_us_super_international.html">Contact Sales Team</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-on-surface w-full py-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="md:col-span-1">
+<div class="text-headline-md font-headline-md font-bold text-on-primary dark:text-primary mb-stack-md">Super International</div>
+<p class="text-body-md text-on-primary/70 dark:text-on-surface-variant/70">Global leaders in thermoplastic polyurethane engineering and chemical distribution.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Products</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-primary/70 dark:text-on-surface-variant/70 hover:text-on-primary hover:underline transition-all text-label-sm font-label-sm" href="tpu_category_overview_with_whatsapp_super_international.html">Product Categories</a></li>
+<li class=""><a class="text-on-primary/70 dark:text-on-surface-variant/70 hover:text-on-primary hover:underline transition-all text-label-sm font-label-sm" href="tpu_category_overview_with_whatsapp_super_international.html">Technical Specifications</a></li>
+<li class=""><a class="text-on-primary/70 dark:text-on-surface-variant/70 hover:text-on-primary hover:underline transition-all text-label-sm font-label-sm" href="tpu_category_overview_with_whatsapp_super_international.html">Safety Data Sheets</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Legal</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-primary/70 dark:text-on-surface-variant/70 hover:text-on-primary hover:underline transition-all text-label-sm font-label-sm" href="simple_privacy_policy_super_international.html">Terms of Service</a></li>
+<li class=""><a class="text-on-primary/70 dark:text-on-surface-variant/70 hover:text-on-primary hover:underline transition-all text-label-sm font-label-sm" href="simple_privacy_policy_super_international.html">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Contact</h4>
+<p class="text-on-primary/70 dark:text-on-surface-variant/70 text-label-sm font-label-sm">Global HQ: Floor 18, Innovation Center<br>Chemical District, Global Plaza</p>
+</div>
+</div>
+<div class="border-t border-white/10 mt-12 pt-8 text-center px-margin-mobile">
+<p class="text-label-sm font-label-sm text-on-primary/50">© 2024 Super International. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+
+<script>
+        // Micro-interactions
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.add('scale-95');
+                setTimeout(() => el.classList.remove('scale-95'), 150);
+            });
+        });
+    </script>
+<a href="https://wa.me/919971032297" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-8 right-8 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95">
+<svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+</svg>
+</a>
+<script>
+function toggleDrawer() {
+    const drawer = document.getElementById('navigation-drawer') || document.getElementById('nav-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+    if (!drawer || !overlay) return;
+    const isClosed = drawer.classList.contains('-translate-x-full');
+    if (isClosed) {
+        drawer.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+        requestAnimationFrame(() => overlay.classList.remove('opacity-0'));
+    } else {
+        drawer.classList.add('-translate-x-full');
+        overlay.classList.add('opacity-0');
+        setTimeout(() => overlay.classList.add('hidden'), 300);
+    }
+}
+</script>
+</body></html>
