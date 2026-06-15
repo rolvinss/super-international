@@ -101,6 +101,16 @@
       }
     </script>
 <style>
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
@@ -111,14 +121,14 @@
         }
     </style>
 </head>
-<body class="bg-background text-on-background font-body-md">
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-surface dark:bg-surface-dim border-b border-outline-variant/20 dark:border-outline/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
-<nav class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max-width mx-auto">
-<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface dark:bg-surface-dim border-b border-outline-variant/20 dark:border-outline/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<nav class="flex justify-between items-center gap-2 h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="flex-1 md:flex-none min-w-0 text-[20px] leading-6 md:text-headline-md md:leading-8 font-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">
                 Super International
             </div>
-<div class="hidden md:flex items-center gap-stack-lg">
+<div class="hidden md:flex items-center space-x-stack-lg">
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="../index.html">Home</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="home_super_international.html#product-categories">Products</a>
 <a class="text-primary border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="about_us_super_international.html">About Us</a>
@@ -126,8 +136,8 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="simple_privacy_policy_super_international.html">Privacy</a>
 </div>
 <div class="flex items-center gap-stack-md">
-<button onclick="window.location.href='contact_us_super_international.html'" class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95 duration-150">Inquiry</button>
-<button class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
+<button onclick="window.location.href='contact_us_super_international.html'" class="hidden sm:inline-flex bg-primary text-on-primary px-6 py-2 rounded font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95 duration-150">Inquiry</button>
+<button class="md:hidden flex items-center shrink-0 p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
 </div>
 </nav>
 </header>
@@ -162,13 +172,13 @@
 </a>
 </nav>
 </aside>
-<main class="pt-20">
+<main class="pt-20 overflow-hidden">
 <!-- Hero Section: Our Story -->
 <section class="relative min-h-[614px] flex items-center overflow-hidden bg-primary-container">
 <div class="absolute inset-0 opacity-40 transition-all duration-700 opacity-100 translate-y-0">
 <img alt="Corporate Office" class="w-full h-full object-cover" data-alt="A sophisticated, high-end corporate office interior with floor-to-ceiling glass windows overlooking a modern industrial skyline. The lighting is cold and professional with deep navy and slate grey tones. Sharp architectural lines and minimalist furniture reinforce an atmosphere of authority, precision, and global trade expertise in the chemical industry." src="assets/images/remote-image-035.png">
 </div>
-<div class="relative z-10 px-margin-desktop max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter py-section-padding transition-all duration-700 opacity-100 translate-y-0">
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter py-section-padding transition-all duration-700 opacity-100 translate-y-0">
 <div class="space-y-stack-md">
 <span class="text-on-primary-container font-label-md text-label-md tracking-widest uppercase">Established Authority</span>
 <h1 class="text-display-lg font-display-lg text-white leading-tight">Our Story: A Legacy of Industrial Precision</h1>

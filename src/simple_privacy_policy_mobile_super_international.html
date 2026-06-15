@@ -135,10 +135,12 @@
 <body class="bg-background text-on-background min-h-screen overflow-x-hidden">
 <!-- TopAppBar -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)] flex justify-between items-center gap-2 px-margin-mobile h-16">
-<button onclick="toggleDrawer()" class="p-2 shrink-0 active:opacity-80 transition-opacity">
+<div class="flex min-w-0 flex-1 items-center gap-2">
+<button onclick="toggleDrawer()" class="p-2 shrink-0 active:opacity-80 transition-opacity" aria-label="Open navigation">
 <span class="material-symbols-outlined text-primary">menu</span>
 </button>
-<span class="flex-1 min-w-0 text-center font-headline-md text-[20px] leading-6 font-bold text-primary tracking-tight">Super International</span>
+<span class="min-w-0 font-headline-md text-[20px] leading-6 font-bold text-primary tracking-tight">Super International</span>
+</div>
 <div class="w-10 shrink-0" aria-hidden="true"></div>
 </header>
 <!-- Navigation Drawer Overlay -->

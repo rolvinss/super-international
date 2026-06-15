@@ -7,6 +7,16 @@
 <link href="assets/css/inter.css" rel="stylesheet">
 <link href="assets/css/material-symbols.css" rel="stylesheet">
 <style>
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
@@ -114,12 +124,14 @@
 </head>
 <body class="bg-background text-on-background font-body-md overflow-x-hidden">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-surface flex justify-between items-center px-margin-mobile h-16 w-full border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
-<button onclick="toggleDrawer()" class="text-primary p-2 transition-opacity active:opacity-80">
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface flex justify-between items-center gap-2 px-margin-mobile h-16 border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<div class="flex min-w-0 flex-1 items-center gap-2">
+<button onclick="toggleDrawer()" class="text-primary p-2 shrink-0 transition-opacity active:opacity-80" aria-label="Open navigation">
 <span class="material-symbols-outlined">menu</span>
 </button>
-<span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Super International</span>
-<div class="w-10" aria-hidden="true"></div>
+<span class="min-w-0 font-headline-md text-[20px] leading-6 font-bold text-primary tracking-tight">Super International</span>
+</div>
+<div class="w-10 shrink-0" aria-hidden="true"></div>
 </header>
 <!-- Navigation Drawer Overlay -->
 <div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
@@ -153,7 +165,7 @@
 </a></div>
 </nav>
 </aside>
-<main class="pt-16">
+<main class="pt-16 overflow-hidden">
 <!-- Hero Section -->
 <section class="relative h-[400px] flex items-center px-margin-mobile overflow-hidden">
 <div class="absolute inset-0 z-0">
