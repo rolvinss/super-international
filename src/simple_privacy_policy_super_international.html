@@ -7,6 +7,16 @@
 <link href="assets/css/material-symbols.css" rel="stylesheet">
 <link href="assets/css/material-symbols.css" rel="stylesheet">
 <style>
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
@@ -125,11 +135,11 @@
         }
     </script>
 </head>
-<body class="bg-surface text-on-surface">
+<body class="bg-surface text-on-surface overflow-x-hidden">
 <!-- TopNavBar -->
 <nav class="w-full top-0 sticky bg-surface dark:bg-surface-container-highest border-b border-outline/20 flat no shadows transition-all duration-200 ease-out z-50">
-<div class="flex justify-between items-center h-16 px-margin-desktop max-w-container-max-width mx-auto">
-<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+<div class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto gap-3">
+<div class="flex-1 md:flex-none min-w-0 font-headline-md text-[20px] leading-6 md:text-headline-md md:leading-8 font-bold text-primary dark:text-primary-fixed">
                 Super International
             </div>
 <div class="hidden md:flex gap-stack-lg items-center">
@@ -141,17 +151,17 @@
 </div>
 <div class="flex items-center gap-stack-md">
 
-<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-90 transition-all">Inquiry</button>
-<button class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
+<button onclick="window.location.href='contact_us_super_international.html'" class="hidden sm:inline-flex bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-90 transition-all">Inquiry</button>
+<button class="md:hidden flex items-center shrink-0 p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
 </div>
 </div>
 </nav>
 <!-- Hero Section -->
-<header class="bg-surface-container-low pt-section-padding pb-stack-lg border-b border-outline/10">
-<div class="max-w-container-max-width mx-auto px-margin-desktop">
+<header class="bg-surface-container-low pt-stack-lg md:pt-section-padding pb-stack-lg border-b border-outline/10">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="flex flex-col gap-stack-sm max-w-3xl">
 <span class="font-label-sm text-label-sm text-on-primary-container tracking-widest">LEGAL &amp; COMPLIANCE</span>
-<h1 class="font-display-lg text-display-lg text-primary">Privacy Policy</h1>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">Privacy Policy</h1>
 <p class="font-label-sm text-label-sm text-on-surface-variant mt-2">Last Updated: October 24, 2024</p>
 <p class="font-body-lg text-body-lg text-secondary mt-stack-md leading-relaxed">
                     At Super International, we handle sensitive chemical industry data with the same precision and safety protocols as our physical product logistics. This policy outlines our commitment to protecting the professional and technical data of our global B2B partners.
@@ -194,8 +204,8 @@
 <div class="max-w-container-max-width mx-auto flex flex-col min-h-screen">
 <!-- Side Navigation Shell -->
 <!-- Main Content Area -->
-<main class="flex-grow p-margin-desktop bg-surface-container-lowest mx-auto">
-<div class="max-w-3xl space-y-stack-lg">
+<main class="flex-grow w-full p-margin-mobile md:p-margin-desktop bg-surface-container-lowest mx-auto overflow-hidden">
+<div class="max-w-3xl w-full space-y-stack-lg">
 <!-- Section: Data Collection -->
 <section class="scroll-mt-24" id="data-collection">
 <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md flex items-center gap-2">
@@ -223,8 +233,8 @@
 <!-- Section: Cookies -->
 <section class="scroll-mt-24 pt-stack-lg border-t border-outline/10" id="cookies">
 <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">Cookie Usage Policy</h2>
-<div class="overflow-hidden border border-outline/20 rounded-lg">
-<table class="w-full text-left text-sm">
+<div class="overflow-x-auto border border-outline/20 rounded-lg">
+<table class="w-full min-w-[560px] text-left text-sm">
 <thead class="bg-surface-container-high font-label-md text-label-md">
 <tr>
 <th class="p-3">Cookie Type</th>
@@ -279,15 +289,15 @@
 </div>
 </section>
 <!-- CTA: Download PDF -->
-<div class="mt-section-padding p-stack-lg bg-surface-container-high rounded-xl border border-outline/10 flex flex-col items-center text-center gap-stack-md">
+<div class="mt-section-padding p-stack-md md:p-stack-lg bg-surface-container-high rounded-xl border border-outline/10 flex flex-col items-center text-center gap-stack-md">
 <span class="material-symbols-outlined text-4xl text-primary">picture_as_pdf</span>
 <h3 class="font-headline-md text-headline-md text-primary">Offline Compliance Documentation</h3>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
                         Download the full technical version of our privacy and security protocols in PDF format for your procurement records.
                     </p>
-<div class="flex gap-stack-md">
-<button onclick="window.location.href='simple_privacy_policy_super_international.html'" class="px-6 py-2 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all">Download PDF (2.4MB)</button>
-<button onclick="window.location.href='contact_us_super_international.html'" class="px-6 py-2 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-all">Inquiry Link</button>
+<div class="flex w-full flex-col sm:flex-row justify-center gap-stack-md">
+<button onclick="window.location.href='simple_privacy_policy_super_international.html'" class="w-full sm:w-auto px-6 py-2 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all">Download PDF (2.4MB)</button>
+<button onclick="window.location.href='contact_us_super_international.html'" class="w-full sm:w-auto px-6 py-2 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-all">Inquiry Link</button>
 </div>
 </div>
 </div>
@@ -295,7 +305,7 @@
 </div>
 <!-- Footer -->
 <footer class="w-full bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-fixed border-t border-outline-variant/10 transition-opacity duration-200">
-<div class="flex flex-col md:flex-row justify-between items-center py-stack-lg px-margin-desktop max-w-container-max-width mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
 <div class="flex flex-col gap-2 mb-stack-md md:mb-0">
 <div class="font-headline-md text-headline-md text-on-primary font-bold">Super International</div>
 <p class="font-label-sm text-label-sm text-on-primary/70">© 2024 Super International. All rights reserved. Global Chemical Logistics &amp; Compliance.</p>
@@ -351,7 +361,7 @@
             quoteBtn.style.boxShadow = 'none';
         });
     </script>
-<a href="https://wa.me/919971032297" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-8 right-8 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95">
+<a href="https://wa.me/919971032297" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95">
 <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
 </svg>

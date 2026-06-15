@@ -7,6 +7,16 @@
 <link href="assets/css/material-symbols.css" rel="stylesheet">
 <link href="assets/css/material-symbols.css" rel="stylesheet">
 <style>
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
@@ -113,16 +123,16 @@
         }
     </script>
 </head>
-<body class="bg-background text-on-background min-h-screen flex flex-col">
+<body class="bg-background text-on-background min-h-screen flex flex-col overflow-x-hidden">
 <!-- TopAppBar -->
-<header class="bg-surface fixed top-0 w-full z-50 border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)] flex justify-between items-center px-margin-mobile h-16">
-<div class="flex items-center gap-4">
-<button class="p-2 active:opacity-80 transition-opacity" onclick="toggleDrawer()">
+<header class="bg-surface fixed top-0 left-0 right-0 z-50 border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)] flex justify-between items-center gap-2 px-margin-mobile h-16">
+<div class="flex min-w-0 flex-1 items-center gap-2">
+<button class="p-2 shrink-0 active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation">
 <span class="material-symbols-outlined text-primary">menu</span>
 </button>
-<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Super International</h1>
+<h1 class="min-w-0 font-headline-md text-[20px] leading-6 font-bold text-primary tracking-tight">Super International</h1>
 </div>
-<div class="w-10" aria-hidden="true"></div>
+<div class="w-10 shrink-0" aria-hidden="true"></div>
 </header>
 <!-- Navigation Drawer Overlay -->
 <div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
@@ -156,13 +166,13 @@
 </a></div>
 </nav>
 </aside>
-<main class="mt-16 flex-grow">
+<main class="mt-16 flex-grow overflow-hidden">
 <!-- Hero Section -->
 <section class="relative h-48 bg-primary-container flex items-center px-margin-mobile overflow-hidden">
 <div class="absolute inset-0 opacity-20">
 <div class="w-full h-full bg-[radial-gradient(#6f88ad_1px,transparent_1px)] [background-size:20px_20px]"></div>
 </div>
-<div class="relative z-10">
+<div class="relative z-10 min-w-0">
 <h2 class="font-display-lg-mobile text-display-lg-mobile text-white mb-2">Global Inquiry Support</h2>
 <p class="font-body-md text-body-md text-on-primary-container max-w-xs">Technical expertise and logistics solutions across six continents.</p>
 </div>
@@ -177,15 +187,15 @@
 <div class="grid grid-cols-1 gap-stack-md">
 <div class="space-y-1">
 <label class="block font-label-sm text-label-sm text-primary uppercase">Full Name</label>
-<input class="w-full border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="Enter name" type="text">
+<input class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="Enter name" type="text">
 </div>
 <div class="space-y-1">
 <label class="block font-label-sm text-label-sm text-primary uppercase">Corporate Email</label>
-<input class="w-full border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="name@company.com" type="email">
+<input class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="name@company.com" type="email">
 </div>
 <div class="space-y-1">
 <label class="block font-label-sm text-label-sm text-primary uppercase">Industry Segment</label>
-<select class="w-full border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md">
+<select class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md">
 <option>Specialty Chemicals</option>
 <option>Pharmaceuticals</option>
 <option>Agrochemicals</option>
@@ -194,7 +204,7 @@
 </div>
 <div class="space-y-1">
 <label class="block font-label-sm text-label-sm text-primary uppercase">Inquiry Details</label>
-<textarea class="w-full border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="Describe your technical requirements or product specs..." rows="4"></textarea>
+<textarea class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="Describe your technical requirements or product specs..." rows="4"></textarea>
 </div>
 </div>
 <button class="w-full bg-primary text-white font-label-md text-label-md py-4 uppercase tracking-widest active:bg-secondary transition-colors" type="submit">
@@ -204,7 +214,7 @@
 </section>
 <!-- Headquarters Info -->
 <section class="px-margin-mobile py-stack-lg bg-surface-container">
-<div class="bg-white border border-outline-variant/30 p-6 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<div class="bg-white border border-outline-variant/30 p-6 shadow-[0px_4px_12px_rgba(0,31,63,0.08)] overflow-hidden">
 <h3 class="font-headline-md text-headline-md mb-4 flex items-center gap-2">
 <span class="material-symbols-outlined text-primary">corporate_fare</span>
                     Global HQ
@@ -214,13 +224,13 @@
 <p class="">88 Industrial Way, Suite 400</p>
 <p class="">Houston, TX 77002, USA</p>
 <div class="pt-4 space-y-2">
-<a class="flex items-center gap-3 text-primary hover:underline" href="tel:+18005550199">
+<a class="flex min-w-0 items-center gap-3 text-primary hover:underline" href="tel:+18005550199">
 <span class="material-symbols-outlined text-sm">call</span>
-                            +1 (800) 555-0199
+<span class="min-w-0 break-words">+1 (800) 555-0199</span>
                         </a>
-<a class="flex items-center gap-3 text-primary hover:underline" href="mailto:hq@chemcorpglobal.com">
+<a class="flex min-w-0 items-center gap-3 text-primary hover:underline" href="mailto:hq@chemcorpglobal.com">
 <span class="material-symbols-outlined text-sm">mail</span>
-                            hq@chemcorpglobal.com
+<span class="min-w-0 break-all">hq@chemcorpglobal.com</span>
                         </a>
 </div>
 </div>
@@ -231,8 +241,8 @@
 <h3 class="font-label-md text-label-md uppercase text-secondary mb-stack-md border-b border-outline-variant/20 pb-2">Regional Logistics Hubs</h3>
 <div class="space-y-stack-md">
 <!-- Hub 1 -->
-<div class="flex items-start gap-4 p-4 border-l-2 border-primary bg-surface-container-low">
-<div class="flex-grow">
+<div class="flex items-start gap-4 p-4 border-l-2 border-primary bg-surface-container-low overflow-hidden">
+<div class="min-w-0 flex-grow">
 <p class="font-label-md text-label-md text-primary">Rotterdam Terminal (EU)</p>
 <p class="font-body-md text-body-md text-on-surface-variant">Hazardous Cargo Processing &amp; Storage</p>
 <span class="inline-block mt-2 font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5">ISO 14001</span>
@@ -240,8 +250,8 @@
 <span class="material-symbols-outlined text-secondary">location_on</span>
 </div>
 <!-- Hub 2 -->
-<div class="flex items-start gap-4 p-4 border-l-2 border-primary bg-surface-container-low">
-<div class="flex-grow">
+<div class="flex items-start gap-4 p-4 border-l-2 border-primary bg-surface-container-low overflow-hidden">
+<div class="min-w-0 flex-grow">
 <p class="font-label-md text-label-md text-primary">Singapore Port (APAC)</p>
 <p class="font-body-md text-body-md text-on-surface-variant">Regional Distribution &amp; Repackaging</p>
 <span class="inline-block mt-2 font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5">Customs Verified</span>
@@ -249,8 +259,8 @@
 <span class="material-symbols-outlined text-secondary">location_on</span>
 </div>
 <!-- Hub 3 -->
-<div class="flex items-start gap-4 p-4 border-l-2 border-primary bg-surface-container-low">
-<div class="flex-grow">
+<div class="flex items-start gap-4 p-4 border-l-2 border-primary bg-surface-container-low overflow-hidden">
+<div class="min-w-0 flex-grow">
 <p class="font-label-md text-label-md text-primary">Dubai Logistics City (MENA)</p>
 <p class="font-body-md text-body-md text-on-surface-variant">Middle East Supply Chain Coordination</p>
 <span class="inline-block mt-2 font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5">Duty Free Zone</span>
@@ -263,7 +273,7 @@
 <section class="h-64 bg-surface-container-highest relative overflow-hidden">
 <div class="absolute inset-0 grayscale opacity-50 bg-cover bg-center" data-alt="A detailed map with precise minimalist cartography showing global shipping routes and industrial locations across the continents. The map uses a monochrome palette of deep navy and slate grey with subtle teal points indicating logistics hubs. The lighting is digital and clean, emphasizing technical accuracy and global reach for an international chemical supplier." style="background-image: url('assets/images/remote-image-031.png')"></div>
 <div class="absolute inset-0 bg-primary/10"></div>
-<div class="absolute bottom-4 left-4 bg-white px-3 py-1 font-label-sm text-label-sm shadow-sm border border-outline-variant/30 flex items-center gap-2">
+<div class="absolute bottom-4 left-4 right-4 bg-white px-3 py-1 font-label-sm text-label-sm shadow-sm border border-outline-variant/30 flex items-center gap-2">
 <span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
                 Operational: Global Network
             </div>
@@ -324,7 +334,7 @@
             }
         }
     </script>
-<a href="https://wa.me/919971032297" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-8 right-8 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95">
+<a href="https://wa.me/919971032297" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-4 right-4 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95">
 <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
 </svg>
