@@ -446,6 +446,16 @@
             }
         });
 
+        function closeDrawer() {
+            const drawer = document.getElementById('navigation-drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            if (!drawer || !overlay) return;
+
+            drawer.classList.add('-translate-x-full');
+            overlay.classList.remove('opacity-100');
+            setTimeout(() => overlay.classList.add('hidden'), 300);
+        }
+
         function toggleDrawer() {
             const drawer = document.getElementById('navigation-drawer');
             const overlay = document.getElementById('drawer-overlay');
@@ -457,11 +467,13 @@
                 overlay.classList.remove('hidden');
                 setTimeout(() => overlay.classList.add('opacity-100'), 10);
             } else {
-                drawer.classList.add('-translate-x-full');
-                overlay.classList.remove('opacity-100');
-                setTimeout(() => overlay.classList.add('hidden'), 300);
+                closeDrawer();
             }
         }
+
+        document.querySelectorAll('#navigation-drawer a').forEach((link) => {
+            link.addEventListener('click', closeDrawer);
+        });
     </script>
 
 
