@@ -237,22 +237,23 @@
 <h3 class="text-headline-md font-headline-md text-primary">Technical Inquiry Form</h3>
 <p class="text-body-md font-body-md text-on-surface-variant">For SDS requests, bulk quotes, or logistical assistance, please complete the form below. Our response time is typically within 4 business hours.</p>
 </div>
-<form class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<form action="https://api.web3forms.com/submit" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<input type="hidden" name="access_key" value="f3622312-580d-426f-b6e4-2e5199a4b3bb">
 <div class="flex flex-col gap-1">
-<label class="text-label-sm font-label-sm text-primary uppercase tracking-wider">Full Name</label>
-<input class="w-full min-w-0 border border-outline p-3 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="John Doe" type="text">
+<label class="text-label-sm font-label-sm text-primary uppercase tracking-wider" for="contact-name">Full Name</label>
+<input id="contact-name" class="w-full min-w-0 border border-outline p-3 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" name="name" placeholder="John Doe" type="text" required>
 </div>
 <div class="flex flex-col gap-1">
-<label class="text-label-sm font-label-sm text-primary uppercase tracking-wider">Business Email</label>
-<input class="w-full min-w-0 border border-outline p-3 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="john@company.com" type="email">
+<label class="text-label-sm font-label-sm text-primary uppercase tracking-wider" for="contact-email">Business Email</label>
+<input id="contact-email" class="w-full min-w-0 border border-outline p-3 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" name="email" placeholder="john@company.com" type="email" required>
 </div>
 <div class="flex flex-col gap-1">
-<label class="text-label-sm font-label-sm text-primary uppercase tracking-wider">Company Name</label>
-<input class="w-full min-w-0 border border-outline p-3 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Chemical Solutions Ltd." type="text">
+<label class="text-label-sm font-label-sm text-primary uppercase tracking-wider" for="contact-company">Company Name</label>
+<input id="contact-company" class="w-full min-w-0 border border-outline p-3 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" name="company" placeholder="Chemical Solutions Ltd." type="text">
 </div>
 <div class="flex flex-col gap-1">
-<label class="text-label-sm font-label-sm text-primary uppercase tracking-wider">Subject</label>
-<select class="w-full min-w-0 border border-outline p-3 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all">
+<label class="text-label-sm font-label-sm text-primary uppercase tracking-wider" for="contact-subject">Subject</label>
+<select id="contact-subject" class="w-full min-w-0 border border-outline p-3 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" name="subject">
 <option>Bulk Quote Request</option>
 <option>Safety Data Sheet (SDS)</option>
 <option>Logistics &amp; Shipping</option>
@@ -261,8 +262,8 @@
 </select>
 </div>
 <div class="flex flex-col gap-1 md:col-span-2">
-<label class="text-label-sm font-label-sm text-primary uppercase tracking-wider">Message Details</label>
-<textarea class="w-full min-w-0 border border-outline p-3 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Please provide CAS numbers or specific product requirements..." rows="6"></textarea>
+<label class="text-label-sm font-label-sm text-primary uppercase tracking-wider" for="contact-message">Message Details</label>
+<textarea id="contact-message" class="w-full min-w-0 border border-outline p-3 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" name="message" placeholder="Please provide CAS numbers or specific product requirements..." rows="6" required></textarea>
 </div>
 <div class="md:col-span-2 mt-stack-md">
 <button class="w-full bg-primary text-on-primary py-4 rounded-lg font-headline-md hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2" type="submit">
