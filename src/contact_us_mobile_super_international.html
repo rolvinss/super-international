@@ -183,28 +183,38 @@
 <span class="w-1 h-6 bg-primary"></span>
 <h3 class="font-headline-md text-headline-md uppercase tracking-tight">Technical Inquiry</h3>
 </div>
-<form class="space-y-stack-md">
+<form action="https://api.web3forms.com/submit" method="POST" class="space-y-stack-md">
+<input type="hidden" name="access_key" value="f3622312-580d-426f-b6e4-2e5199a4b3bb">
 <div class="grid grid-cols-1 gap-stack-md">
 <div class="space-y-1">
-<label class="block font-label-sm text-label-sm text-primary uppercase">Full Name</label>
-<input class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="Enter name" type="text">
+<label class="block font-label-sm text-label-sm text-primary uppercase" for="mobile-contact-name">Full Name</label>
+<input id="mobile-contact-name" class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" name="name" placeholder="Enter name" type="text" required>
 </div>
 <div class="space-y-1">
-<label class="block font-label-sm text-label-sm text-primary uppercase">Corporate Email</label>
-<input class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="name@company.com" type="email">
+<label class="block font-label-sm text-label-sm text-primary uppercase" for="mobile-contact-email">Corporate Email</label>
+<input id="mobile-contact-email" class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" name="email" placeholder="name@company.com" type="email" required>
 </div>
 <div class="space-y-1">
-<label class="block font-label-sm text-label-sm text-primary uppercase">Industry Segment</label>
-<select class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md">
-<option>Specialty Chemicals</option>
-<option>Pharmaceuticals</option>
-<option>Agrochemicals</option>
-<option>Polymers &amp; Plastics</option>
+<label class="block font-label-sm text-label-sm text-primary uppercase" for="mobile-contact-subject">Subject</label>
+<select id="mobile-contact-subject" class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" name="subject">
+<option value="TPU Product Inquiry">TPU Product Inquiry</option>
+<option value="Phenolic Resin Inquiry">Phenolic Resin Inquiry</option>
+<option value="Hydrocarbon Resin Inquiry">Hydrocarbon Resin Inquiry</option>
+<option value="Chloroprene Rubber Inquiry">Chloroprene Rubber Inquiry</option>
+<option value="Magnesium Oxide Inquiry">Magnesium Oxide Inquiry</option>
+<option value="SBS Polymer Inquiry">SBS Polymer Inquiry</option>
+<option value="Petroleum Resin Inquiry">Petroleum Resin Inquiry</option>
+<option value="Chlorinated Rubber Powder Inquiry">Chlorinated Rubber Powder Inquiry</option>
+<option value="Gum Rosin Inquiry">Gum Rosin Inquiry</option>
+<option value="Bulk Quote Request">Bulk Quote Request</option>
+<option value="SDS or COA Request">SDS or COA Request</option>
+<option value="Logistics and Shipping Support">Logistics and Shipping Support</option>
+<option value="Other Technical Requirement">Other Technical Requirement</option>
 </select>
 </div>
 <div class="space-y-1">
-<label class="block font-label-sm text-label-sm text-primary uppercase">Inquiry Details</label>
-<textarea class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" placeholder="Describe your technical requirements or product specs..." rows="4"></textarea>
+<label class="block font-label-sm text-label-sm text-primary uppercase" for="mobile-contact-message">Inquiry Details</label>
+<textarea id="mobile-contact-message" class="w-full min-w-0 border border-outline-variant bg-surface-container-low px-4 py-3 rounded-none focus:border-primary focus:ring-0 transition-all font-body-md text-body-md" name="message" placeholder="Describe your technical requirements or product specs..." rows="4" required></textarea>
 </div>
 </div>
 <button class="w-full bg-primary text-white font-label-md text-label-md py-4 uppercase tracking-widest active:bg-secondary transition-colors" type="submit">
