@@ -118,16 +118,14 @@
         }
     </script>
 </head>
-<body class="bg-background text-on-background font-body-md antialiased">
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
 <!-- TopAppBar Component -->
-<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)] flex justify-between items-center px-margin-mobile h-16">
-<div class="flex items-center gap-4">
-<button onclick="toggleDrawer()" class="p-2 active:opacity-80 transition-opacity">
-<span class="material-symbols-outlined text-primary">menu</span>
-</button>
-<span class="font-headline-md text-headline-md font-bold text-primary tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span>Super International</span></span>
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)] flex justify-between items-center px-margin-mobile h-16 overflow-hidden">
+<span class="min-w-0 flex-1 font-headline-md text-[20px] leading-6 font-bold text-primary tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span class="min-w-0">Super International</span></span>
+<div class="flex shrink-0 items-center gap-2">
+<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all">Inquiry</button>
+<button onclick="toggleDrawer()" class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
 </div>
-<div class="w-10" aria-hidden="true"></div>
 </header>
 <!-- Navigation Drawer Overlay -->
 <div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
@@ -191,7 +189,7 @@
 <div class="p-4 bg-white border border-outline-variant/20 rounded-lg shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
 <span class="material-symbols-outlined text-on-tertiary-container mb-2">thermostat</span>
 <div class="font-label-sm text-label-sm text-secondary uppercase mb-1">Softening Pt</div>
-<div class="font-headline-md text-headline-md font-bold text-primary">78Ã‚Â°C</div>
+<div class="font-headline-md text-headline-md font-bold text-primary">78Ãƒâ€šÃ‚Â°C</div>
 </div>
 <div class="col-span-2 p-4 bg-white border border-outline-variant/20 rounded-lg shadow-[0px_4px_12px_rgba(0,31,63,0.08)] flex items-center justify-between">
 <div>
@@ -225,7 +223,7 @@
 </tr>
 <tr>
 <td class="px-4 py-3 border-b border-outline-variant/10">Color (Gardner)</td>
-<td class="px-4 py-3 border-b border-outline-variant/10 text-right">Ã¢â€°Â¤ 2.0</td>
+<td class="px-4 py-3 border-b border-outline-variant/10 text-right">ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 2.0</td>
 </tr>
 <tr>
 <td class="px-4 py-3 border-b border-outline-variant/10">Acid Value (mg KOH/g)</td>
@@ -237,11 +235,11 @@
 </tr>
 <tr>
 <td class="px-4 py-3 border-b border-outline-variant/10">Ash Content (%)</td>
-<td class="px-4 py-3 border-b border-outline-variant/10 text-right">Ã¢â€°Â¤ 0.02</td>
+<td class="px-4 py-3 border-b border-outline-variant/10 text-right">ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 0.02</td>
 </tr>
 <tr>
 <td class="px-4 py-3">Alcohol Insolubles (%)</td>
-<td class="px-4 py-3 text-right">Ã¢â€°Â¤ 0.03</td>
+<td class="px-4 py-3 text-right">ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 0.03</td>
 </tr>
 </tbody>
 </table>
@@ -252,7 +250,7 @@
 <span class="material-symbols-outlined text-primary">description</span>
 <div class="flex-grow">
 <div class="font-label-md text-label-md text-primary">Technical Data Sheet (TDS)</div>
-<div class="font-label-sm text-label-sm text-secondary">PDF (1.2 MB) Ã¢â‚¬Â¢ English</div>
+<div class="font-label-sm text-label-sm text-secondary">PDF (1.2 MB) ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ English</div>
 </div>
 <span class="material-symbols-outlined text-primary">download</span>
 </a>
@@ -311,7 +309,7 @@
 </div>
 </div>
 <div class="mt-section-padding border-t border-white/10 dark:border-black/5 pt-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
-<p class="text-label-sm text-on-primary/50 dark:text-on-surface-variant/50 text-center">Ã‚Â© 2024 Super International. All Rights Reserved.</p>
+<p class="text-label-sm text-on-primary/50 dark:text-on-surface-variant/50 text-center">Ãƒâ€šÃ‚Â© 2024 Super International. All Rights Reserved.</p>
 </div>
 </footer>
 <!-- BottomNavBar / WhatsApp FAB (Floating Component) -->

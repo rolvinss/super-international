@@ -116,11 +116,11 @@
         }
     </style>
 </head>
-<body class="bg-surface text-on-surface">
+<body class="bg-surface text-on-surface overflow-x-hidden">
 <!-- TopNavBar -->
 <header class="bg-surface dark:bg-surface-container-highest border-b border-outline-variant/20 sticky top-0 z-50">
-<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max-width mx-auto">
-<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span>Super International</span></div>
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max-width mx-auto overflow-hidden">
+<div class="min-w-0 flex-1 md:flex-none font-headline-md text-[20px] leading-6 md:text-headline-md md:leading-8 font-bold text-primary dark:text-primary-fixed inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span class="min-w-0">Super International</span></div>
 <div class="hidden md:flex items-center space-x-gutter">
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="../index.html">Home</a>
 <a class="text-primary border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="home_super_international.html#product-categories">Products</a>
@@ -128,8 +128,8 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="contact_us_super_international.html">Contact Us</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="simple_privacy_policy_super_international.html">Privacy</a>
 </div>
-<div class="flex items-center space-x-stack-md">
-<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md transition-opacity hover:opacity-90">Inquiry</button>
+<div class="flex shrink-0 items-center gap-2 md:gap-stack-md">
+<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary-container text-on-primary px-4 md:px-6 py-2 rounded-lg font-label-md text-label-md transition-opacity hover:opacity-90">Inquiry</button>
 <button class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
 </div>
 </nav>
@@ -167,11 +167,11 @@
 </aside>
 <main>
 <!-- Hero Section -->
-<section class="bg-surface py-section-padding px-margin-desktop">
+<section class="bg-surface py-section-padding px-margin-mobile md:px-margin-desktop overflow-hidden">
 <div class="max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
 <div class="order-2 md:order-1">
 <span class="inline-block bg-on-tertiary-container text-white px-3 py-1 rounded-sm font-label-sm text-label-sm mb-stack-md uppercase tracking-widest">Natural Raw Material</span>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-md">Gum Rosin: Natural High-Quality Resin</h1>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-md break-words">Gum Rosin: Natural High-Quality Resin</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Superior purity distilled from premium pine oleoresin. An essential tackifier for global industrial formulations requiring stability and high-performance adhesion.</p>
 </div>
 <div class="order-1 md:order-2">
@@ -181,7 +181,7 @@
 </div>
 </div>
 </section><section class="py-section-padding bg-surface-container-low">
-<div class="max-w-container-max-width mx-auto px-margin-desktop">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
 <h2 class="font-headline-lg text-headline-lg text-primary mb-12">Industrial Standard in High-Performance Gum Rosin</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
 <div class="space-y-4">
@@ -221,7 +221,7 @@
 </div>
 </section>
 <!-- Section 1: Key Properties (Bento Grid Style) -->
-<section class="py-section-padding px-margin-desktop max-w-container-max-width mx-auto">
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
 <div class="mb-stack-lg border-l-4 border-primary-container pl-stack-md">
 <h2 class="font-headline-lg text-headline-lg text-primary-container">Key Properties</h2>
 <p class="font-body-md text-body-md text-on-surface-variant">Exceptional performance metrics for demanding chemical environments.</p>
@@ -252,7 +252,7 @@
 </section>
 <!-- Section 2: Technical Specifications (Zebra Table) -->
 <section class="bg-surface-container-low py-section-padding">
-<div class="px-margin-desktop max-w-container-max-width mx-auto">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
 <div class="mb-stack-lg text-center">
 <h2 class="font-headline-lg text-headline-lg text-primary-container">Technical Specifications</h2>
 <p class="font-body-md text-body-md text-on-surface-variant">Standardized analytical data for international procurement.</p>
@@ -317,7 +317,7 @@
 </div>
 </div>
 <div class="mt-section-padding border-t border-white/10 dark:border-black/5 pt-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
-<p class="text-label-sm text-on-primary/50 dark:text-on-surface-variant/50 text-center">Ã‚Â© 2024 Super International. All Rights Reserved.</p>
+<p class="text-label-sm text-on-primary/50 dark:text-on-surface-variant/50 text-center">Ãƒâ€šÃ‚Â© 2024 Super International. All Rights Reserved.</p>
 </div>
 </footer>
 <script>
