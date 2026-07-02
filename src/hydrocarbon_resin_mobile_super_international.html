@@ -112,11 +112,11 @@
 <body class="bg-background text-on-background font-body-md">
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-surface dark:bg-inverse-surface border-b border-outline-variant/20 dark:border-outline/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)] flex justify-between items-center px-margin-mobile h-16">
-<div class="flex items-center gap-4">
-<button class="material-symbols-outlined text-primary dark:text-primary-fixed cursor-pointer" data-icon="menu" onclick="toggleDrawer()" aria-label="Open navigation">menu</button>
-<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span>Super International</span></h1>
+<h1 class="min-w-0 flex-1 font-headline-md text-[20px] leading-6 font-bold text-primary dark:text-primary-fixed tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span class="min-w-0">Super International</span></h1>
+<div class="flex shrink-0 items-center gap-2">
+<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all">Inquiry</button>
+<button class="md:hidden flex items-center p-2 text-primary dark:text-primary-fixed active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
 </div>
-<div class="w-10" aria-hidden="true"></div>
 </header>
 <!-- Navigation Drawer Overlay -->
 <div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>

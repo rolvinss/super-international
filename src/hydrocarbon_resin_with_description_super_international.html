@@ -114,8 +114,8 @@
 <body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-white">
 <!-- Top Navigation Shell -->
 <header class="fixed top-0 w-full z-50 bg-surface dark:bg-surface-dim border-b border-outline-variant/20 dark:border-outline/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
-<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max-width mx-auto">
-<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span>Super International</span></div>
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="min-w-0 flex-1 md:flex-none text-[20px] leading-6 md:text-headline-md md:leading-8 font-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span class="min-w-0">Super International</span></div>
 <nav class="hidden md:flex gap-8 items-center">
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="../index.html">Home</a>
 <a class="text-primary border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="home_super_international.html#product-categories">Products</a>
@@ -126,7 +126,10 @@
                     Inquiry
                 </button>
 </nav>
-<div class="md:hidden"><button class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button></div>
+<div class="md:hidden flex shrink-0 items-center gap-2">
+<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all">Inquiry</button>
+<button class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
+</div>
 </div>
 </header>
 <div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
