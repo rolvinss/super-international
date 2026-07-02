@@ -121,27 +121,29 @@
     </style>
 </head>
 <body class="bg-surface font-body-md text-on-surface antialiased">
-<!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-surface dark:bg-surface-dim border-b border-outline-variant/20 shadow-sm">
-<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
-<div class="text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span>Super International</span></div>
-<div class="hidden md:flex items-center space-x-stack-lg">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 glass-header border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span>Super International</span></div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-stack-lg">
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="../index.html">Home</a>
 <a class="text-primary border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="home_super_international.html#product-categories">Products</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="about_us_super_international.html">About Us</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="contact_us_super_international.html">Contact Us</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="simple_privacy_policy_super_international.html">Privacy</a>
 </div>
-<div class="flex items-center space-x-stack-md">
+<div class="flex items-center gap-stack-md">
 
-<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary px-stack-lg py-2.5 rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all">
+<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary px-4 md:px-stack-lg py-2 rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all">
                     Inquiry
                 </button>
-<button class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
-</div>
+<button class="md:hidden flex items-center" onclick="toggleDrawer()" aria-label="Open navigation">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
 </nav>
-<div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
+</header><div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
 <aside class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-[280px] bg-surface dark:bg-inverse-surface shadow-lg -translate-x-full transition-transform duration-300 ease-in-out" id="navigation-drawer">
 <div class="p-6 border-b border-outline-variant/10 flex items-center justify-between">
 <h2 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span>Super International</span></h2>
@@ -202,7 +204,7 @@
 <ul class="space-y-4">
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="text-body-md text-on-surface">Exceptional Thermal Stability (up to 250Ã‚Â°C+)</span>
+<span class="text-body-md text-on-surface">Exceptional Thermal Stability (up to 250Â°C+)</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
@@ -234,7 +236,7 @@
 </div>
 <div>
 <h3 class="font-headline-md text-primary mb-2">Heat Stability</h3>
-<p class="text-on-surface-variant font-body-md">Maintains structural integrity and performance under extreme thermal conditions exceeding 250Ã‚Â°C.</p>
+<p class="text-on-surface-variant font-body-md">Maintains structural integrity and performance under extreme thermal conditions exceeding 250Â°C.</p>
 </div>
 </div>
 <div class="flex items-start gap-4 p-stack-lg bg-surface-container-lowest border border-outline-variant/30 rounded-xl">
@@ -279,7 +281,7 @@
 <div class="space-y-3 mb-stack-lg text-body-md">
 <div class="flex justify-between border-b border-outline-variant/20 pb-2">
 <span class="text-on-surface-variant font-label-sm">Softening Point</span>
-<span class="">95-105 Ã‚Â°C</span>
+<span class="">95-105 Â°C</span>
 </div>
 <div class="flex justify-between border-b border-outline-variant/20 pb-2">
 <span class="text-on-surface-variant font-label-sm">Free Phenol Content</span>
@@ -305,12 +307,12 @@
 </div>
 <div class="space-y-3 mb-stack-lg text-body-md">
 <div class="flex justify-between border-b border-outline-variant/20 pb-2">
-<span class="text-on-surface-variant font-label-sm">Viscosity (at 25Ã‚Â°C)</span>
+<span class="text-on-surface-variant font-label-sm">Viscosity (at 25Â°C)</span>
 <span class="">400-600 mPa.s</span>
 </div>
 <div class="flex justify-between border-b border-outline-variant/20 pb-2">
 <span class="text-on-surface-variant font-label-sm">Curing Time</span>
-<span class="">180s @ 150Ã‚Â°C</span>
+<span class="">180s @ 150Â°C</span>
 </div>
 <div class="flex justify-between border-b border-outline-variant/20 pb-2">
 <span class="text-on-surface-variant font-label-sm">Primary Application</span>
@@ -400,7 +402,7 @@
 </div>
 </div>
 <div class="mt-section-padding border-t border-white/10 dark:border-black/5 pt-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
-<p class="text-label-sm text-on-primary/50 dark:text-on-surface-variant/50 text-center">Ã‚Â© 2024 Super International. All Rights Reserved.</p>
+<p class="text-label-sm text-on-primary/50 dark:text-on-surface-variant/50 text-center">Â© 2024 Super International. All Rights Reserved.</p>
 </div>
 </footer>
 <script>

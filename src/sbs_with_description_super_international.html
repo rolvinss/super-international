@@ -108,24 +108,29 @@
     </style>
 </head>
 <body class="bg-background overflow-x-hidden">
-<!-- Top Navigation Bar -->
-<header class="bg-surface border-b border-outline-variant/20 sticky top-0 z-50">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max-width mx-auto overflow-hidden">
-<div class="min-w-0 flex-1 md:flex-none font-headline-md text-[20px] leading-6 md:text-headline-md md:leading-8 font-bold text-primary inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span class="min-w-0">Super International</span></div>
-<nav class="hidden md:flex space-x-gutter">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 glass-header border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span>Super International</span></div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-stack-lg">
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="../index.html">Home</a>
 <a class="text-primary border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="home_super_international.html#product-categories">Products</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="about_us_super_international.html">About Us</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="contact_us_super_international.html">Contact Us</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="simple_privacy_policy_super_international.html">Privacy</a>
+</div>
+<div class="flex items-center gap-stack-md">
+
+<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary px-4 md:px-stack-lg py-2 rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all">
+                    Inquiry
+                </button>
+<button class="md:hidden flex items-center" onclick="toggleDrawer()" aria-label="Open navigation">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
 </nav>
-<div class="flex shrink-0 items-center gap-2 md:gap-stack-md">
-<button onclick="window.location.href='contact_us_super_international.html'" class="px-4 md:px-6 py-2 bg-primary text-on-primary font-label-md text-label-md rounded hover:opacity-90 transition-opacity">Inquiry</button>
-<button class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity" onclick="toggleDrawer()" aria-label="Open navigation"><span class="material-symbols-outlined">menu</span></button>
-</div>
-</div>
-</header>
-<div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
+</header><div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
 <aside class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-[280px] bg-surface dark:bg-inverse-surface shadow-lg -translate-x-full transition-transform duration-300 ease-in-out" id="navigation-drawer">
 <div class="p-6 border-b border-outline-variant/10 flex items-center justify-between">
 <h2 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span>Super International</span></h2>

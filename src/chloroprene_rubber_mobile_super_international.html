@@ -115,17 +115,29 @@
     </script>
 </head>
 <body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container overflow-x-hidden">
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-surface flex justify-between items-center px-margin-mobile h-16 border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
-<h1 class="min-w-0 flex-1 font-headline-md text-[20px] leading-6 font-bold text-primary tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span class="min-w-0">Super International</span></h1>
-<div class="flex shrink-0 items-center gap-2">
-<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all">Inquiry</button>
-<button onclick="toggleDrawer()" aria-label="Open navigation" class="md:hidden flex items-center p-2 text-primary active:opacity-80 transition-opacity">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 glass-header border-b border-outline-variant/20 shadow-[0px_4px_12px_rgba(0,31,63,0.08)]">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary tracking-tight inline-flex items-center gap-2"><img alt="Super International logo" class="h-10 w-10 md:h-12 md:w-12 shrink-0 rounded-full object-contain bg-white" src="assets/images/superInternationallogo.jpg"><span>Super International</span></div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="../index.html">Home</a>
+<a class="text-primary border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="home_super_international.html#product-categories">Products</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="about_us_super_international.html">About Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="contact_us_super_international.html">Contact Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="simple_privacy_policy_super_international.html">Privacy</a>
+</div>
+<div class="flex items-center gap-stack-md">
+
+<button onclick="window.location.href='contact_us_super_international.html'" class="bg-primary text-on-primary px-4 md:px-stack-lg py-2 rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all">
+                    Inquiry
+                </button>
+<button class="md:hidden flex items-center" onclick="toggleDrawer()" aria-label="Open navigation">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </div>
-</header>
-<!-- Navigation Drawer Overlay -->
+</nav>
+</header><!-- Navigation Drawer Overlay -->
 <div class="fixed inset-0 bg-black/40 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
 <!-- NavigationDrawer -->
 <aside class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-[280px] bg-surface dark:bg-inverse-surface shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out" id="nav-drawer">
